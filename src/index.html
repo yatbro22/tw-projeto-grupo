@@ -1,18 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap w/ Vite</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container py-4 px-3 mx-auto">
-        <h1>Hello, Bootstrap and Vite!</h1>
-        <button class="btn btn-primary">Primary button</button>
+      <h1>Hello, Bootstrap and Vite!</h1>
+      <br />
+      <input id="search" placeholder="Search" />
+      <select id="select" value="">
+        <option value="">Selecione um genero</option>
+      </select>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Generos</th>
+          </tr>
+        </thead>
+        <tbody id="body"></tbody>
+      </table>
     </div>
     <script type="module" src="./js/main.js"></script>
-</body>
-
+  </body>
 </html>
