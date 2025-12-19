@@ -6,9 +6,11 @@ const tableBody = document.querySelector("#body");
 const inputSearch = document.querySelector("#search");
 const select = document.querySelector("#select");
 
+// filter variables
 let search = "";
 let genre = "";
 
+// TODO something else than Set
 const distinctGenres = new Set(
   movies.MovieData.flatMap((movie) =>
     movie.Genre.split(",").map((genre) => genre.trim())
@@ -36,6 +38,7 @@ select.addEventListener("input", (e) => {
   updateTableData();
 });
 
+// TODO refactor
 function updateTableData() {
   const data = movies.MovieData.filter((movie) => {
     const title = `${movie.Series_Title}`;
